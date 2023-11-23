@@ -10,6 +10,12 @@
             <%= submit_tag "Search", name: "", class: "btn btn-primary" %>
             <% end %>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-8 mb-3">
+                <%= link_to "All Action Movies", root_path(genre: "action") %>
+                <%= link_to "All Comedy Movies", root_path(genre: "comedy") %>
+            </div>
+        </div>
     </div>
 
     <div class="row justify-content-center">

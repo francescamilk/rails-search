@@ -14,4 +14,11 @@ end
 
 puts "Creating TV shows..."
 sample["tv_shows"].each { |tv_show| TvShow.create!(tv_show) }
+
+puts "Add random genre..."
+Movie.all.each do |movie|
+  movie.genre = ["action", "comedy"].sample
+  movie.save!
+end
+
 puts "Done."
